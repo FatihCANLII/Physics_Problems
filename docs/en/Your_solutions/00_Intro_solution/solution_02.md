@@ -111,5 +111,5 @@ Both equations are satisfied.
 ## Final Answer
 
 \[
-x = 3, \qquad y = 2
+x = 3 \quad y = 2
 \]
