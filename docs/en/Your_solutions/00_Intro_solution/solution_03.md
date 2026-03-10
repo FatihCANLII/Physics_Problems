@@ -1,115 +1,68 @@
-## 3. Proportionality
+### **Step 1: Define the Initial State**
+First, let's establish the baseline formula for the original gravitational force before any changes occur. 
 
-The Universal Law of Gravitation is:
+We will call this original force $F_{initial}$:
 
-\[
-F = G \frac{m_1 m_2}{r^2}
-\]
-
-Where:
-
-- \(F\) = gravitational force  
-- \(G\) = gravitational constant  
-- \(m_1, m_2\) = masses  
-- \(r\) = distance between the masses  
-
-We want to determine **how the force changes** if:
-
-- The distance \(r\) is **doubled**
-- Both masses \(m_1\) and \(m_2\) are **halved**
+$$F_{initial} = G \frac{m_1 m_2}{r^2}$$
 
 ---
 
-## Step 1: Write the Original Formula
+### **Step 2: Define the New Variables**
+The problem states that three specific changes are made to the system. Let's write out the new values for each variable:
 
-\[
-F = G \frac{m_1 m_2}{r^2}
-\]
-
----
-
-## Step 2: Apply the Changes
-
-New values:
-
-\[
-m_1' = \frac{m_1}{2}, \qquad m_2' = \frac{m_2}{2}, \qquad r' = 2r
-\]
-
-Substitute these into the formula.
-
-\[
-F' = G \frac{m_1' m_2'}{(r')^2}
-\]
+* **Distance ($r$) is doubled:** $$r_{new} = 2r$$
+* **First mass ($m_1$) is halved:** $$m_{1,new} = \frac{1}{2}m_1$$
+* **Second mass ($m_2$) is halved:** $$m_{2,new} = \frac{1}{2}m_2$$
 
 ---
 
-## Step 3: Substitute the Expressions
+### **Step 3: Set Up the New Equation**
+Now, we want to find the new force, which we will call $F_{new}$. We do this by plugging our new variables into the Universal Law of Gravitation formula:
 
-\[
-F' = G \frac{\left(\frac{m_1}{2}\right)\left(\frac{m_2}{2}\right)}{(2r)^2}
-\]
+$$F_{new} = G \frac{m_{1,new} \cdot m_{2,new}}{(r_{new})^2}$$
 
----
+Substitute the expressions we defined in Step 2:
 
-## Step 4: Simplify the Expression
-
-### Simplify the numerator
-
-\[
-\left(\frac{m_1}{2}\right)\left(\frac{m_2}{2}\right) = \frac{m_1 m_2}{4}
-\]
-
-### Simplify the denominator
-
-\[
-(2r)^2 = 4r^2
-\]
-
-Now substitute back:
-
-\[
-F' = G \frac{\frac{m_1 m_2}{4}}{4r^2}
-\]
+$$F_{new} = G \frac{\left(\frac{1}{2}m_1\right) \cdot \left(\frac{1}{2}m_2\right)}{(2r)^2}$$
 
 ---
 
-## Step 5: Simplify Further
+### **Step 4: Simplify the Numerator and Denominator**
+This is where the detailed algebra comes in. We need to handle the top and bottom of the fraction separately.
 
-\[
-F' = G \frac{m_1 m_2}{16 r^2}
-\]
+**1. The Numerator (The Masses):**
+Multiply the fractions and the variables together.
+* $\frac{1}{2} \cdot \frac{1}{2} = \frac{1}{4}$
+* So, the numerator becomes: $\frac{1}{4}m_1 m_2$
 
----
+**2. The Denominator (The Distance):**
+Remember to square *both* the coefficient (2) and the variable ($r$).
+* $(2r)^2 = 2^2 \cdot r^2 = 4r^2$
 
-## Step 6: Compare With Original Force
+Now, put the simplified numerator and denominator back into the equation for $F_{new}$:
 
-Original force:
-
-\[
-F = G \frac{m_1 m_2}{r^2}
-\]
-
-New force:
-
-\[
-F' = G \frac{m_1 m_2}{16 r^2}
-\]
-
-Thus,
-
-\[
-F' = \frac{F}{16}
-\]
+$$F_{new} = G \frac{\frac{1}{4}m_1 m_2}{4r^2}$$
 
 ---
 
-## Final Result
+### **Step 5: Isolate the Original Equation**
+To find the factor by which the force changed, we need to separate the numbers from the variables. 
 
-The gravitational force becomes:
+Divide the numerical fraction in the numerator by the number in the denominator:
 
-\[
-F' = \frac{F}{16}
-\]
+$$\frac{\frac{1}{4}}{4} = \frac{1}{4} \cdot \frac{1}{4} = \frac{1}{16}$$
 
-So, **the force decreases by a factor of 16** (it becomes one-sixteenth of the original force).
+Pull this constant factor out to the very front of the equation:
+
+$$F_{new} = \frac{1}{16} \cdot \left( G \frac{m_1 m_2}{r^2} \right)$$
+
+---
+
+### **Step 6: Final Conclusion**
+Notice that the expression inside the parentheses is exactly equal to our original force, $F_{initial}$. 
+
+Substitute $F_{initial}$ back in:
+
+$$F_{new} = \frac{1}{16} F_{initial}$$
+
+> **Final Answer:** > The gravitational force changes by a factor of **$\frac{1}{16}$**. By cutting both masses in half and moving them twice as far apart, the resulting gravitational attraction becomes 16 times weaker than it originally was.
