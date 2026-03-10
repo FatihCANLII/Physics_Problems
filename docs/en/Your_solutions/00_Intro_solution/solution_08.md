@@ -83,3 +83,4 @@ The total area under the curve is:
 $$
 2
 $$
+y = \sin(x)
