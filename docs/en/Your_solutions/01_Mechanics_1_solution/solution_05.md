@@ -1,46 +1,61 @@
-Given:
-River velocity = 2 m/s east  
-Boat speed (relative to water) = 5 m/s  
-River width = 200 m  
+# Relative Velocity Problem
+
+## Given
+- River velocity: **2 m/s east**
+- Boat speed (relative to water): **5 m/s**
+- River width: **200 m**
+- The boat wants to travel **directly north** across the river.
 
 ---
 
-## Step 1: Set up velocity components
+## Step 1: Determine the Direction
 
-Let θ be the angle **west of north** the boat must aim.
+The river current pushes the boat east at 2 m/s.  
+To move straight north overall, the boat must have a westward component equal to 2 m/s.
 
-To cancel the eastward river flow:
-Horizontal component of boat velocity = 2 m/s west
+Let θ be the angle **west of north**.
 
-So:
-5 sinθ = 2
+Horizontal component of boat velocity:
 
-⇒ sinθ = 2/5  
-⇒ θ = sin⁻¹(2/5) ≈ 23.6°
+5 sin(θ) = 2
 
----
+sin(θ) = 2/5
 
-## Step 2: Find effective northward velocity
+θ = sin⁻¹(2/5)
 
-Vertical component:
+θ ≈ 23.6°
 
-vₙ = 5 cosθ  
-   = 5 √(1 - (2/5)²)  
-   = 5 √(21/25)  
-   = √21 ≈ 4.58 m/s
+**Direction:** 23.6° west of north
 
 ---
 
-## Step 3: Time to cross river
+## Step 2: Find the Effective Northward Velocity
 
-t = distance / velocity  
-  = 200 / 4.58  
-  ≈ 43.7 s
+Only the northward component helps the boat cross the river.
+
+vₙ = 5 cos(θ)
+
+cos(θ) = √(1 − (2/5)²)
+
+cos(θ) = √(21/25)
+
+vₙ = 5 √(21/25)
+
+vₙ = √21 ≈ 4.58 m/s
+
+---
+
+## Step 3: Time to Cross the River
+
+time = distance / velocity
+
+t = 200 / 4.58
+
+t ≈ 43.7 s
 
 ---
 
 ## Final Answer
 
-Direction: ≈ 23.6° west of north  
-
-Time to cross: ≈ 43.7 s
+- Direction: **23.6° west of north**
+- Time to cross: **≈ 43.7 seconds**
