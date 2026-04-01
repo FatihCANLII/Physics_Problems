@@ -6,103 +6,91 @@
 
 ## 🔹 Key Formula (Simple Pendulum)
 
-\[
-T = 2\pi \sqrt{\frac{L}{g}}
-\]
+T = 2π √(L / g)
 
-- \(T\): Period  
-- \(L\): Length of pendulum  
-- \(g\): Gravitational acceleration  
+- T: Period  
+- L: Length of pendulum  
+- g: Gravitational acceleration  
 
 ---
 
 ## 🟢 Part A: Period on the Moon
 
 ### Given:
-- Period on Earth: \(T_E = 4\,\text{s}\)
-- Gravity on Moon: \(g_M = \frac{1}{6} g_E\)
+- Period on Earth: Tₑ = 4 s  
+- Gravity on Moon: gₘ = (1/6) gₑ  
 
 ---
 
-### Step 1: Use proportional relationship
+### Step 1: Relationship
 
-\[
-T \propto \frac{1}{\sqrt{g}}
-\]
+T ∝ 1 / √g
 
-\[
-\frac{T_M}{T_E} = \sqrt{\frac{g_E}{g_M}}
-\]
+So:
+
+Tₘ / Tₑ = √(gₑ / gₘ)
 
 ---
 
-### Step 2: Substitute values
+### Step 2: Substitute
 
-\[
-\frac{T_M}{4} = \sqrt{\frac{g_E}{g_E/6}} = \sqrt{6}
-\]
+Tₘ / 4 = √(gₑ / (gₑ / 6))  
+Tₘ / 4 = √6  
 
-\[
-T_M = 4\sqrt{6}
-\]
+Tₘ = 4√6  
 
 ---
 
 ### Step 3: Final value
 
-\[
-T_M \approx 4 \times 2.45 = 9.8\,\text{s}
-\]
+√6 ≈ 2.45  
+
+Tₘ ≈ 4 × 2.45 = **9.8 s**
+
+---
 
 ### ✅ Answer:
-**\(T_M \approx 9.8\,\text{s}\)**
+**Period on Moon = 9.8 s**
 
 ---
 
 ## 🟢 Part B: Length for 1-second Period (Earth)
 
 ### Given:
-- \(T = 1\,\text{s}\)
-- \(g = 9.8\,\text{m/s}^2\)
+- T = 1 s  
+- g = 9.8 m/s²  
 
 ---
 
 ### Step 1: Rearrange formula
 
-\[
-L = \frac{gT^2}{4\pi^2}
-\]
+L = gT² / (4π²)
 
 ---
 
-### Step 2: Substitute values
+### Step 2: Substitute
 
-\[
-L = \frac{9.8 \times 1^2}{4\pi^2}
-\]
-
-\[
-L = \frac{9.8}{39.48}
-\]
+L = 9.8 × 1² / (4π²)  
+L = 9.8 / 39.48  
 
 ---
 
 ### Step 3: Final value
 
-\[
-L \approx 0.248\,\text{m}
-\]
-
-### ✅ Answer:
-**\(L \approx 0.25\,\text{m} \; (25\,\text{cm})\)**
+L ≈ **0.25 m** (25 cm)
 
 ---
 
-## 📌 Final Summary
+### ✅ Answer:
+**Required length = 0.25 m**
+
+---
+
+## 📌 Summary
 
 | Quantity | Result |
-|--------|--------|
-| Period on Moon | **9.8 s** |
-| Length for 1 s period | **0.25 m** |
+|----------|--------|
+| Period on Moon | 9.8 s |
+| Length (1 s period) | 0.25 m |
 
 ---
