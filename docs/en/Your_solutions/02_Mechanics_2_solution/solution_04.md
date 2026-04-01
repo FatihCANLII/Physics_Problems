@@ -31,13 +31,22 @@ v₁ ≈ **7.67 m/s**
 
 ---
 
-## 🟢 Step 2: Use Momentum Conservation (Perfectly Inelastic Collision)
+## 🟢 Step 2: Find Height (h)
 
-m₁v₁ + m₂v₂ = (m₁ + m₂)v_f  
+We use this formula:
 
-Since second block is at rest:
+h = L × (1 − cosθ)
 
-m₁v₁ = (m₁ + m₂)v_f  
+---
+
+### Substitute values:
+
+h = 1.0 × (1 − cos(15°))
+
+cos(15°) ≈ 0.966  
+
+h = 1.0 × (1 − 0.966)  
+h ≈ 0.034 m  
 
 ---
 
