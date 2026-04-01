@@ -18,7 +18,7 @@ E ∝ h
 
 So after each bounce:
 
-h_new = 0.7 × h_previous  
+new height = 0.7 × previous height
 
 ---
 
