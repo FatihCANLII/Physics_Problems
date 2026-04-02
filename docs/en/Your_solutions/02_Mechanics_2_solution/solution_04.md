@@ -1,67 +1,76 @@
-## 4. Energy & Momentum
+# 4. Energy & Momentum
+
+## 🧩 Part 1: Speed of First Block
+
+The block slides down → potential energy converts to kinetic energy.
+
+\[
+mgh = \frac{1}{2}mv^2
+\]
+
+\[
+v = \sqrt{2gh}
+\]
+
+\[
+v = \sqrt{2 \times 9.8 \times 3.0}
+\]
+
+\[
+v \approx 7.67 \, m/s
+\]
+
+👉 Speed just before collision
 
 ---
 
-## 🔹 Given
+## 🧩 Part 2: Collision (Perfectly Inelastic)
 
-- m₁ = 0.5 kg (moving block)  
-- m₂ = 1.5 kg (at rest)  
-- Height: h = 3.0 m  
-- g = 9.8 m/s²  
-
----
-
-## 🟢 Step 1: Speed of First Block at Bottom
-
-Use energy conservation:
-
-mgh = (1/2)mv²  
-
-Mass cancels:
-
-v₁ = √(2gh)
+- Blocks **stick together**
+- Energy is **NOT conserved**
+- Momentum **IS conserved**
 
 ---
 
-### Calculate:
+## 📌 Formula
 
-v₁ = √(2 × 9.8 × 3.0)  
-v₁ = √58.8  
-v₁ ≈ **7.67 m/s**
+\[
+m_1 v_1 + m_2 v_2 = (m_1 + m_2)v_f
+\]
 
----
+Second block is at rest → \(v_2 = 0\)
 
-## 🟢 Step 2: Use Momentum Conservation (Perfectly Inelastic Collision)
-
-m₁v₁ + m₂v₂ = (m₁ + m₂)v_f  
-
-Since second block is at rest:
-
-m₁v₁ = (m₁ + m₂)v_f  
+\[
+m_1 v_1 = (m_1 + m_2)v_f
+\]
 
 ---
 
-### Solve for final speed:
+## 🧮 Solve for Final Speed
 
-vf = (m1 × v1) / (m1 + m2)
+Given:
+- \(m_1 = 0.5 \, kg\)
+- \(m_2 = 1.5 \, kg\)
+- \(v_1 = 7.67 \, m/s\)
 
-vf = (0.5 × 7.67) / (0.5 + 1.5)  
-vf = 3.835 / 2  
+\[
+v_f = \frac{m_1 v_1}{m_1 + m_2}
+\]
 
-vf ≈ **1.92 m/s**
+\[
+v_f = \frac{0.5 \times 7.67}{0.5 + 1.5}
+\]
+
+\[
+v_f = \frac{3.835}{2}
+\]
+
+\[
+v_f \approx 1.92 \, m/s
+\]
 
 ---
 
-## ✅ Final Answer:
+## ✅ Final Answer
+
 **Speed after collision ≈ 1.92 m/s**
-
----
-
-## 📌 Summary
-
-| Quantity | Value |
-|----------|-------|
-| Speed before collision | 7.67 m/s |
-| Final speed (combined mass) | 1.92 m/s |
-
----
