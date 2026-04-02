@@ -1,62 +1,67 @@
-## 3. Conservation of Energy
+# 3. Conservation of Energy (Pendulum)
+
+## 🔧 Concept
+
+At the top:
+- The pendulum has **potential energy**
+
+At the bottom:
+- That energy converts into **kinetic energy (speed)**
+
+👉 Energy is conserved (it only changes form)
 
 ---
 
-## 🔹 Given
+## 📌 Formula
 
-- Length: L = 1.0 m  
-- Initial angle: θ = 15°  
-- g = 9.8 m/s²  
-
----
-
-## 🟢 Step 1: Use Energy Conservation
-
-Potential energy → Kinetic energy
-
-mgh = (1/2)mv²  
+\[
+mgh = \frac{1}{2}mv^2
+\]
 
 Mass cancels:
 
-gh = (1/2)v²  
-
-So:
-
-v = √(2gh)
+\[
+gh = \frac{1}{2}v^2
+\]
 
 ---
 
-## 🟢 Step 2: Find Height (h)
+## 🧮 Step 1: Find Height (h)
 
-h = L (1 − cosθ)
+\[
+h = L(1 - \cos\theta)
+\]
 
-cos(15°) ≈ 0.966  
+Given:
+- \(L = 1.0 \, m\)
+- \(\theta = 15^\circ\)
 
-h = 1.0 × (1 − 0.966)  
-h ≈ 0.034 m  
+\[
+\cos(15^\circ) \approx 0.966
+\]
 
----
-
-## 🟢 Step 3: Calculate Speed
-
-v = √(2 × 9.8 × 0.034)  
-
-v = √(0.6664)  
-
-v ≈ **0.82 m/s**
-
----
-
-## ✅ Final Answer:
-**Speed at bottom ≈ 0.82 m/s**
+\[
+h = 1.0 \times (1 - 0.966) = 0.034 \, m
+\]
 
 ---
 
-## 📌 Summary
+## 🧮 Step 2: Calculate Speed
 
-| Quantity | Value |
-|----------|-------|
-| Height (h) | 0.034 m |
-| Speed (v) | 0.82 m/s |
+\[
+v = \sqrt{2gh}
+\]
+
+\[
+v = \sqrt{2 \times 9.8 \times 0.034}
+\]
+
+\[
+v \approx 0.82 \, m/s
+\]
 
 ---
+
+## ✅ Final Answer
+
+**Speed at the bottom ≈ 0.82 m/s**
