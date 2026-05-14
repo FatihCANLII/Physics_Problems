@@ -20,7 +20,13 @@ $$
 
 The bottom branch has one resistor in series with two parallel resistors.
 
-First, calculate the two parallel resistors:
+Before calculating, we use the parallel resistance formula:
+
+$$
+R_{\parallel} = \frac{R_1 R_2}{R_1 + R_2}
+$$
+
+Now substitute the resistor values:
 
 $$
 R_{\parallel} = \frac{10 \times 10}{10 + 10}
@@ -40,22 +46,48 @@ $$
 
 The top and bottom branches are connected in parallel.
 
-$$ R_{\text{middle}} = \frac{20 \times 15}{20 + 15} $$
+Again, use the parallel resistance formula:
 
-$$ R_{\text{middle}} = \frac{300}{35} = \frac{60}{7}\ \Omega $$
+$$
+R_{\parallel} = \frac{R_1 R_2}{R_1 + R_2}
+$$
+
+Substitute the values:
+
+$$
+R_{\text{middle}} = \frac{20 \times 15}{20 + 15}
+$$
+
+$$
+R_{\text{middle}} = \frac{300}{35} = \frac{60}{7}\ \Omega
+$$
 
 ## Final Series Resistor
 
 There is one additional resistor of 10 Ω in series on the right side.
 
-$$ R_{\text{eq}} = \frac{60}{7} + 10 $$
+$$
+R_{\text{eq}} = \frac{60}{7} + 10
+$$
 
-$$ 10 = \frac{70}{7} $$
+Convert 10 into sevenths:
 
-$$ R_{\text{eq}} = \frac{60}{7} + \frac{70}{7} = \frac{130}{7}\ \Omega $$
+$$
+10 = \frac{70}{7}
+$$
 
-$$ R_{\text{eq}} \approx 18.57\ \Omega $$
+Now add the fractions:
+
+$$
+R_{\text{eq}} = \frac{60}{7} + \frac{70}{7} = \frac{130}{7}\ \Omega
+$$
+
+$$
+R_{\text{eq}} \approx 18.57\ \Omega
+$$
 
 ## Final Answer
 
-$$ \boxed{R_{\text{eq}} \approx 18.57\ \Omega} $$
+$$
+\boxed{R_{\text{eq}} \approx 18.57\ \Omega}
+$$
