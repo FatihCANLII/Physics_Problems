@@ -46,7 +46,7 @@ $$ R_{\text{middle}} = \frac{300}{35} = \frac{60}{7}\ \Omega $$
 
 ## Final Series Resistor
 
-There is one additional resistor of \(10\,\Omega\) in series on the right side.
+There is one additional resistor of 10 Ω in series on the right side.
 
 $$ R_{\text{eq}} = \frac{60}{7} + 10 $$
 
