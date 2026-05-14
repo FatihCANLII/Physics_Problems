@@ -1,79 +1,28 @@
-# 4. Mixed Circuit
+## 4. Mixed Circuit Solution
 
-All resistors have resistance:
+**Problem:** Calculate the equivalent resistance for the circuit shown in the figure. All resistors have a resistance of $10\,\Omega$.
 
-$$
-R = 10\ \Omega
-$$
+**Step-by-Step Calculation:**
 
-The circuit can be separated into two main branches between the left node and the middle-right node.
+**1. Top Branch**
+The top branch consists of two resistors in series.
+* $R_{top} = 10\,\Omega + 10\,\Omega = 20\,\Omega$
 
-## Top Branch
+**2. Bottom Branch**
+The bottom branch has two resistors in parallel, which are in series with a single resistor.
+* First, calculate the parallel pair: $R_{pair} = \left(\frac{1}{10} + \frac{1}{10}\right)^{-1} = 5\,\Omega$
+* Add the series resistor in this branch: $R_{bottom} = 10\,\Omega + 5\,\Omega = 15\,\Omega$
 
-The top branch has two resistors in series:
+**3. Combine the Parallel Branches**
+Now we treat the top branch ($20\,\Omega$) and the bottom branch ($15\,\Omega$) as two parallel components.
+* $R_{parallel\_section} = \left(\frac{1}{20} + \frac{1}{15}\right)^{-1}$
+* Common denominator is 60: $\frac{3}{60} + \frac{4}{60} = \frac{7}{60}$
+* $R_{parallel\_section} = \frac{60}{7}\,\Omega$
 
-$$
-R_{\text{top}} = 10 + 10 = 20\ \Omega
-$$
+**4. Total Equivalent Resistance**
+The entire parallel section is in series with the final resistor on the right side of the circuit.
+* $R_{eq} = R_{parallel\_section} + 10\,\Omega$
+* $R_{eq} = \frac{60}{7} + \frac{70}{7} = \frac{130}{7}\,\Omega$
 
-## Bottom Branch
-
-The bottom branch has one resistor in series with two parallel resistors.
-
-First, calculate the two parallel resistors:
-
-$$
-R_{\parallel} = \frac{10 \times 10}{10 + 10}
-$$
-
-$$
-R_{\parallel} = \frac{100}{20} = 5\ \Omega
-$$
-
-Now add the series resistor in the bottom branch:
-
-$$
-R_{\text{bottom}} = 10 + 5 = 15\ \Omega
-$$
-
-## Combining the Two Branches
-
-The top and bottom branches are in parallel:
-
-$$
-R_{\text{middle}} =
-\frac{20 \times 15}{20 + 15}
-$$
-
-$$
-R_{\text{middle}} =
-\frac{300}{35}
-=
-\frac{60}{7}\ \Omega
-$$
-
-## Final Series Resistor
-
-There is one more resistor of \(10\ \Omega\) in series on the right side:
-
-$$
-R_{\text{eq}} =
-\frac{60}{7} + 10
-$$
-
-$$
-R_{\text{eq}} =
-\frac{60}{7} + \frac{70}{7}
-=
-\frac{130}{7}\ \Omega
-$$
-
-$$
-R_{\text{eq}} \approx 18.57\ \Omega
-$$
-
-## Final Answer
-
-$$
-\boxed{R_{\text{eq}} = 18.57\ \Omega}
-$$
+**Final Answer:**
+The equivalent resistance of the circuit is **$\frac{130}{7}\,\Omega$** (approximately $18.57\,\Omega$).
