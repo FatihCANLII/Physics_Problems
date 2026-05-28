@@ -24,8 +24,7 @@ $$
 
 $$
 \text{Percentage uncertainty}
-=
-4.04
+= 4.04
 $$
 
 Final answer:
