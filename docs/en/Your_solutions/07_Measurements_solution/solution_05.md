@@ -9,7 +9,7 @@ $$
 The percentage uncertainty is calculated using:
 
 $$
-\%\text{ uncertainty}
+\text{Percentage uncertainty}
 =
 \frac{\Delta t}{t}\times100
 $$
@@ -17,15 +17,15 @@ $$
 Substitute the values into the formula:
 
 $$
-\%\text{ uncertainty}
+\text{Percentage uncertainty}
 =
 \frac{0.22}{5.45}\times100
 $$
 
 $$
-\%\text{ uncertainty}
+\text{Percentage uncertainty}
 =
-4.04\%
+4.04
 $$
 
 Final answer:
