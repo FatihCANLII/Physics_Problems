@@ -6,7 +6,7 @@ $$
 t = 5.45 \pm 0.22\text{ s}
 $$
 
-Percentage uncertainty is calculated by:
+The percentage uncertainty is calculated using:
 
 $$
 \%\text{ uncertainty}
@@ -14,7 +14,7 @@ $$
 \frac{\Delta t}{t}\times100
 $$
 
-Substitute the values:
+Substitute the values into the formula:
 
 $$
 \%\text{ uncertainty}
@@ -23,7 +23,9 @@ $$
 $$
 
 $$
-\%\text{ uncertainty} = 4.04\%
+\%\text{ uncertainty}
+=
+4.04\%
 $$
 
 Final answer:
