@@ -1,59 +1,51 @@
-# 3. Propagation of Error III
+# 4. Relative Uncertainty
 
-The voltage and current are:
-
-$$
-V = (10.0 \pm 0.2)\text{ V}
-$$
+The speed shown on the speedometer is:
 
 $$
-I = (2.00 \pm 0.05)\text{ A}
+v = 60\text{ km/h}
 $$
 
-Using Ohm's Law:
+The uncertainty of the speedometer is:
 
 $$
-R = \frac{V}{I}
+5\%
 $$
 
+To find the absolute uncertainty, we calculate 5% of 60:
+
 $$
-R = \frac{10.0}{2.00}
+\Delta v = 60 \times \frac{5}{100}
 $$
 
 $$
-R = 5.00\Omega
+\Delta v = 3\text{ km/h}
 $$
 
-For division, the relative uncertainty is:
+This means the actual speed may be 3 km/h higher or lower than the measured value.
+
+Minimum possible speed:
 
 $$
-\frac{\Delta R}{R}
-=
-\sqrt{
-\left(\frac{\Delta V}{V}\right)^{2}
-+
-\left(\frac{\Delta I}{I}\right)^{2}
-}
-$$
-
-Substitute the values:
-
-$$
-\Delta R =
-5.00
-\sqrt{
-\left(\frac{0.2}{10.0}\right)^{2}
-+
-\left(\frac{0.05}{2.00}\right)^{2}
-}
+v_{\text{min}} = 60 - 3
 $$
 
 $$
-\Delta R = 0.16\Omega
+v_{\text{min}} = 57\text{ km/h}
+$$
+
+Maximum possible speed:
+
+$$
+v_{\text{max}} = 60 + 3
+$$
+
+$$
+v_{\text{max}} = 63\text{ km/h}
 $$
 
 Final answer:
 
 $$
-\boxed{R = (5.00 \pm 0.16)\Omega}
+\boxed{57\text{ km/h} \leq v \leq 63\text{ km/h}}
 $$
