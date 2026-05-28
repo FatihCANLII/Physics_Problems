@@ -61,5 +61,3 @@ When factoring in the device's uncertainty, the standard physics notation for th
 $$v = 60 \pm 3 \text{ km/h}$$
 
 * **Actual Speed Range:** **$57$ km/h to $63$ km/h**
-
-> **Presentation Tip:** Remind your audience that even though the driver sees a steady $60$ km/h on the dashboard, the actual physical speed of the vehicle safely fluctuates anywhere between $57$ km/h and $63$ km/h due to the $5\%$ tolerance of the speedometer.
