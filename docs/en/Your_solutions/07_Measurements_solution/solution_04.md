@@ -1,62 +1,32 @@
-# 4. Relative Uncertainty
+# Physics Uncertainties: Quick Solutions
 
-We use **Relative Uncertainty** (often expressed as a percentage) to determine the actual interval or range of a measured value. In this problem, a car's speedometer reads:
+## 4. Relative Uncertainty
+**Problem:** A speedometer has a 5% uncertainty. If it reads 60 km/h, find the actual speed range.
 
-$$v = 60 \text{ km/h with a } 5\% \text{ uncertainty}$$
+* **Given:** $v = 60$ km/h, $\text{Uncertainty} = 5\%$
+* **Formula:** $\Delta v = v \times \left( \frac{\%}{100} \right)$
 
-In this file, we will calculate the absolute uncertainty and find the range of the car's actual speed in 3 simple steps.
+### Solution:
+1. **Find Absolute Uncertainty ($\Delta v$):**
+   $$\Delta v = 60 \times 0.05 = 3 \text{ km/h}$$
+2. **Calculate Range ($v \pm \Delta v$):**
+   * Minimum Speed: $60 - 3 = 57$ km/h
+   * Maximum Speed: $60 + 3 = 63$ km/h
 
----
-
-## 1. Identify the Given Values
-
-Let's break down the information provided:
-
-* **Measured Value ($v$):** $60 \text{ km/h}$ (The speed shown on the dashboard)
-* **Percentage Uncertainty:** $5\%$ (The relative error margin of the speedometer)
-
----
-
-## 2. The Formulas to Use
-
-First, we need to calculate the **Absolute Uncertainty ($\Delta v$)** from the percentage error:
-
-> $$\Delta v = \text{Measured Value} \times \left( \frac{\text{Percentage Uncertainty}}{100} \right)$$
-
-Once we find $\Delta v$, the **Actual Speed Range** is expressed by bounding the measurement between its minimum and maximum possible values:
-
-> $$\text{Range} = v \pm \Delta v \implies [v - \Delta v, v + \Delta v]$$
+**Result:** The car's actual speed range is **57 km/h to 63 km/h** ($60 \pm 3$ km/h).
 
 ---
 
-## 3. Step-by-Step Solution
+## 5. Percentage Uncertainty Calculation
+**Problem:** A time measurement is $t = 5.45 \pm 0.22$ s. Find the percentage uncertainty.
 
-### **Step 1: Calculate the Absolute Uncertainty**
-Multiply the measured speed by the percentage uncertainty to find the exact error in km/h:
+* **Given:** $t = 5.45$ s, $\Delta t = 0.22$ s
+* **Formula:** $\text{Percentage Uncertainty} = \left( \frac{\Delta t}{t} \right) \times 100\%$
 
-$$\Delta v = 60 \times \frac{5}{100}$$
-$$\Delta v = 60 \times 0.05 = 3 \text{ km/h}$$
+### Solution:
+1. **Substitute Values:**
+   $$\text{Percentage Uncertainty} = \left( \frac{0.22}{5.45} \right) \times 100\%$$
+2. **Calculate:**
+   $$\text{Percentage Uncertainty} \approx 0.0404 \times 100\% = 4.04\%$$
 
-*This tells us that the speedometer reading can be off by up to $3 \text{ km/h}$ above or below the actual speed.*
-
-### **Step 2: Calculate the Minimum Speed**
-Subtract the absolute uncertainty from the reading:
-
-$$\text{Minimum Speed} = 60 - 3 = 57 \text{ km/h}$$
-
-### **Step 3: Calculate the Maximum Speed**
-Add the absolute uncertainty to the reading:
-
-$$\text{Maximum Speed} = 60 + 3 = 63 \text{ km/h}$$
-
----
-
-## Summary and Conclusion
-
-The car's actual speed expressed in proper measurement notation is:
-
-$$v = 60 \pm 3 \text{ km/h}$$
-
-* **Actual Speed Range:** **$57 \text{ km/h}$ to $63 \text{ km/h}$**
-
-> **Presentation Tip:** Explain to your audience that even though the speedometer displays a steady $60 \text{ km/h}$, the physical limitations and calibration of the device mean the car's true velocity safely falls anywhere within the $57$ to $63 \text{ km/h}$ window.
+**Result:** The percentage uncertainty is **4.04%** (or approx. **4%**).
