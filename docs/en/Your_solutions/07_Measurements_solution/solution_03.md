@@ -24,8 +24,6 @@ $$
 R = \frac{V}{I}
 $$
 
-We use this formula because Ohm's Law defines resistance as the ratio of voltage to current.
-
 Substituting the measured values:
 
 $$
@@ -86,7 +84,6 @@ $$
 \Delta R = R \times \frac{\Delta R}{R}
 $$
 
-We use this formula because the relative uncertainty must be converted into the same unit as the resistance, which is ohms.
 
 Substituting the values:
 
