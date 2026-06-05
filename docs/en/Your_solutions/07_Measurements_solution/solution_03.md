@@ -24,6 +24,8 @@ $$
 R = \frac{V}{I}
 $$
 
+We use this formula because Ohm's Law defines resistance as the ratio of voltage to current.
+
 Substituting the measured values:
 
 $$
@@ -44,25 +46,39 @@ $$
 
 ## Step 2: Calculate the Relative Uncertainty
 
-Since resistance is obtained by dividing two measured quantities, the relative uncertainties must be combined.
+Since resistance is obtained by dividing two measured quantities, the uncertainties of both measurements contribute to the final uncertainty.
+
+For division, uncertainty propagation is performed using relative uncertainties.
 
 First, calculate the relative uncertainty of the voltage:
 
 $$
-\frac{0.2}{10.0} = 0.02
+\frac{\Delta V}{V}
+=
+\frac{0.2}{10.0}
+=
+0.02
 $$
 
 Then, calculate the relative uncertainty of the current:
 
 $$
-\frac{0.05}{2.00} = 0.025
+\frac{\Delta I}{I}
+=
+\frac{0.05}{2.00}
+=
+0.025
 $$
 
-Combining these uncertainties gives:
+The relative uncertainty of the resistance is obtained by combining these contributions:
 
 $$
-\frac{\Delta R}{R} = 0.032
+\frac{\Delta R}{R}
+=
+0.032
 $$
+
+We calculate the relative uncertainty first because uncertainty formulas for multiplication and division are based on relative uncertainties rather than absolute uncertainties.
 
 This means the resistance has a relative uncertainty of:
 
@@ -74,13 +90,17 @@ $$
 
 ## Step 3: Calculate the Absolute Uncertainty
 
-To obtain the absolute uncertainty in resistance:
+Now we convert the relative uncertainty into an absolute uncertainty.
+
+We use:
 
 $$
-\Delta R = R \times 0.032
+\Delta R = R \times \frac{\Delta R}{R}
 $$
 
-Substituting the value of the resistance:
+We use this formula because the relative uncertainty must be converted into the same unit as the resistance, which is ohms.
+
+Substituting the values:
 
 $$
 \Delta R = 5.00 \times 0.032
@@ -117,3 +137,5 @@ Therefore, the measured resistance is expected to be:
 $$
 4.84\Omega \leq R \leq 5.16\Omega
 $$
+
+This example demonstrates how uncertainties from multiple measurements propagate into a calculated quantity and affect the final result.
