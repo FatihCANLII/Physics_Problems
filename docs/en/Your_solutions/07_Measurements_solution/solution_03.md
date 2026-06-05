@@ -49,11 +49,7 @@ Since resistance is obtained by dividing two measured quantities, we use the unc
 $$
 \frac{\Delta R}{R}
 =
-\sqrt{
-\left(\frac{0.2}{10.0}\right)^2
-+
-\left(\frac{0.05}{2.00}\right)^2
-}
+\sqrt{(0.02)^2+(0.025)^2}
 $$
 
 We use this formula because both voltage and current contribute to the uncertainty of the final result.
