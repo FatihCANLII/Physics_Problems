@@ -53,32 +53,20 @@ For division, uncertainty propagation is performed using relative uncertainties.
 First, calculate the relative uncertainty of the voltage:
 
 $$
-\frac{\Delta V}{V}
-=
-\frac{0.2}{10.0}
-=
-0.02
+\frac{0.2}{10.0} = 0.02
 $$
 
 Then, calculate the relative uncertainty of the current:
 
 $$
-\frac{\Delta I}{I}
-=
-\frac{0.05}{2.00}
-=
-0.025
+\frac{0.05}{2.00} = 0.025
 $$
 
-The relative uncertainty of the resistance is obtained by combining these contributions:
+Now we combine these two relative uncertainties:
 
 $$
-\frac{\Delta R}{R}
-=
-0.032
+\frac{\Delta R}{R} = 0.032
 $$
-
-We calculate the relative uncertainty first because uncertainty formulas for multiplication and division are based on relative uncertainties rather than absolute uncertainties.
 
 This means the resistance has a relative uncertainty of:
 
