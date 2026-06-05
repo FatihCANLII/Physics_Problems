@@ -50,9 +50,9 @@ $$
 \frac{\Delta R}{R}
 =
 \sqrt{
-\left(\frac{\Delta V}{V}\right)^2
+\left(\frac{0.2}{10.0}\right)^2
 +
-\left(\frac{\Delta I}{I}\right)^2
+\left(\frac{0.05}{2.00}\right)^2
 }
 $$
 
