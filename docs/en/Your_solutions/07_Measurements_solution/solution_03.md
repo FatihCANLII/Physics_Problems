@@ -44,7 +44,19 @@ $$
 
 ## Step 2: Calculate the Relative Uncertainty
 
-Since resistance is obtained by dividing two measured quantities, we use the uncertainty formula for division:
+Since resistance is calculated by dividing voltage by current, we use the uncertainty formula for division:
+
+$$
+\frac{\Delta R}{R}
+=
+\sqrt{
+\left(\frac{\Delta V}{V}\right)^2
++
+\left(\frac{\Delta I}{I}\right)^2
+}
+$$
+
+Substituting the values:
 
 $$
 \frac{\Delta R}{R}
@@ -52,26 +64,11 @@ $$
 \sqrt{(0.02)^2+(0.025)^2}
 $$
 
-We use this formula because both voltage and current contribute to the uncertainty of the final result.
-
-Substituting the known values:
-
-$$
-\frac{\Delta R}{R}
-=
-\sqrt{
-\left(\frac{0.2}{10.0}\right)^2
-+
-\left(\frac{0.05}{2.00}\right)^2
-}
-$$
-
 $$
 \frac{\Delta R}{R}
 =
 0.032
 $$
-
 ---
 
 ## Step 3: Calculate the Absolute Uncertainty
