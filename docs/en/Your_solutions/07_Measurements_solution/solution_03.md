@@ -96,12 +96,9 @@ $$
 \Delta I = 0.05
 $$
 
-Substitute these values into the uncertainty formula:
+Substitute these values step by step.
 
-ΔR = √[(1/2.00 × 0.2)² + (10.0/(2.00)² × 0.05)²]
-
-Now calculate each part:
-
+Now calculate each part separately:
 $$
 \frac{1}{2.00}\times0.2 = 0.10
 $$
