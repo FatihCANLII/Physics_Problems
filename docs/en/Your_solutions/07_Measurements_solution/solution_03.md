@@ -12,7 +12,7 @@ $$
 I = (2.00 \pm 0.05)\text{ A}
 $$
 
-Our goal is to calculate the resistance and determine its uncertainty using uncertainty propagation.
+Our goal is to calculate the resistance and determine its uncertainty.
 
 ---
 
@@ -42,114 +42,74 @@ $$
 
 ---
 
-## Step 2: Calculate the Partial Derivatives
+## Step 2: Use the Propagation of Uncertainty Formula
 
-To determine how uncertainties in voltage and current affect the resistance, we calculate the partial derivatives of:
+Since resistance depends on both voltage and current, uncertainty in both quantities affects the final result.
 
-$$
-R(V,I)=\frac{V}{I}
-$$
-
-With respect to voltage:
+For:
 
 $$
-\frac{\partial R}{\partial V}
-=
-\frac{1}{I}
+R = \frac{V}{I}
 $$
 
-With respect to current:
+the uncertainty in resistance is calculated as:
 
-$$
-\frac{\partial R}{\partial I}
-=
--\frac{V}{I^2}
-$$
+ΔR = √[(1/I × ΔV)² + (V/I² × ΔI)²]
 
-These derivatives describe how sensitive the resistance is to changes in voltage and current.
+This formula shows how the uncertainties in voltage and current propagate into the resistance.
 
 ---
 
-## Step 3: Calculate the Uncertainty in Resistance
+## Step 3: Substitute the Values
 
-For independent measurements, uncertainty propagation is given by:
-
-$$
-\Delta R
-=
-\sqrt{
-\left(
-\frac{\partial R}{\partial V}\Delta V
-\right)^2
-+
-\left(
-\frac{\partial R}{\partial I}\Delta I
-\right)^2
-}
-$$
-
-Substituting the derivatives:
+The given values are:
 
 $$
-\Delta R
-=
-\sqrt{
-\left(
-\frac{1}{I}\Delta V
-\right)^2
-+
-\left(
--\frac{V}{I^2}\Delta I
-\right)^2
-}
-$$
-
-Now substitute the measured values:
-
-$$
-\Delta R
-=
-\sqrt{
-\left(
-\frac{1}{2.00}\times0.2
-\right)^2
-+
-\left(
--\frac{10.0}{(2.00)^2}\times0.05
-\right)^2
-}
-$$
-
-Simplifying:
-
-$$
-\Delta R
-=
-\sqrt{
-(0.10)^2
-+
-(0.125)^2
-}
+V = 10.0
 $$
 
 $$
-\Delta R
-=
-\sqrt{
-0.01+0.015625
-}
+I = 2.00
 $$
 
 $$
-\Delta R
-=
-\sqrt{0.025625}
+\Delta V = 0.2
 $$
 
 $$
-\Delta R
-=
-0.16\Omega
+\Delta I = 0.05
+$$
+
+Substitute these values into the uncertainty formula:
+
+ΔR = √[(1/2.00 × 0.2)² + (10.0/(2.00)² × 0.05)²]
+
+Now calculate each part:
+
+$$
+\frac{1}{2.00}\times0.2 = 0.10
+$$
+
+$$
+\frac{10.0}{(2.00)^2}\times0.05 = 0.125
+$$
+
+So:
+
+$$
+\Delta R = \sqrt{(0.10)^2 + (0.125)^2}
+$$
+
+$$
+\Delta R = \sqrt{0.01 + 0.015625}
+$$
+
+$$
+\Delta R = \sqrt{0.025625}
+$$
+
+$$
+\Delta R = 0.16\Omega
 $$
 
 ---
@@ -180,4 +140,4 @@ $$
 4.84\Omega \leq R \leq 5.16\Omega
 $$
 
-This result shows how uncertainties in voltage and current measurements propagate into the calculated resistance.
+This result shows how uncertainties in voltage and current measurements affect the calculated resistance.
