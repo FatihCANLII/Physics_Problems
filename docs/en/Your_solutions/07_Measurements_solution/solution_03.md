@@ -1,6 +1,6 @@
 # 3. Propagation of Error III
 
-In this problem, the resistance is calculated using Ohm’s Law. Since both the voltage and the current contain measurement uncertainties, the calculated resistance will also have an uncertainty.
+In this problem, the resistance is calculated using Ohm’s Law. Since both the voltage and current contain measurement uncertainties, the calculated resistance will also have an uncertainty.
 
 The measured values are:
 
@@ -12,7 +12,7 @@ $$
 I = (2.00 \pm 0.05)\text{ A}
 $$
 
-Our goal is to calculate the resistance and determine its uncertainty.
+Our goal is to calculate the resistance and determine its uncertainty using uncertainty propagation.
 
 ---
 
@@ -42,57 +42,114 @@ $$
 
 ---
 
-## Step 2: Calculate the Relative Uncertainty
+## Step 2: Calculate the Partial Derivatives
 
-Since resistance is obtained by dividing two measured quantities, the uncertainties of both measurements contribute to the final uncertainty.
-
-For division, uncertainty propagation is performed using relative uncertainties.
-
-First, calculate the relative uncertainty of the voltage:
+To determine how uncertainties in voltage and current affect the resistance, we calculate the partial derivatives of:
 
 $$
-\frac{0.2}{10.0} = 0.02
+R(V,I)=\frac{V}{I}
 $$
 
-Then, calculate the relative uncertainty of the current:
+With respect to voltage:
 
 $$
-\frac{0.05}{2.00} = 0.025
+\frac{\partial R}{\partial V}
+=
+\frac{1}{I}
 $$
 
-Now we combine these two relative uncertainties:
+With respect to current:
 
 $$
-\frac{\Delta R}{R} = 0.032
+\frac{\partial R}{\partial I}
+=
+-\frac{V}{I^2}
 $$
 
-This means the resistance has a relative uncertainty of:
-
-$$
-3.2\%
-$$
+These derivatives describe how sensitive the resistance is to changes in voltage and current.
 
 ---
 
-## Step 3: Calculate the Absolute Uncertainty
+## Step 3: Calculate the Uncertainty in Resistance
 
-Now we convert the relative uncertainty into an absolute uncertainty.
-
-We use:
+For independent measurements, uncertainty propagation is given by:
 
 $$
-\Delta R = R \times \frac{\Delta R}{R}
+\Delta R
+=
+\sqrt{
+\left(
+\frac{\partial R}{\partial V}\Delta V
+\right)^2
++
+\left(
+\frac{\partial R}{\partial I}\Delta I
+\right)^2
+}
 $$
 
-
-Substituting the values:
-
-$$
-\Delta R = 5.00 \times 0.032
-$$
+Substituting the derivatives:
 
 $$
-\Delta R = 0.16\Omega
+\Delta R
+=
+\sqrt{
+\left(
+\frac{1}{I}\Delta V
+\right)^2
++
+\left(
+-\frac{V}{I^2}\Delta I
+\right)^2
+}
+$$
+
+Now substitute the measured values:
+
+$$
+\Delta R
+=
+\sqrt{
+\left(
+\frac{1}{2.00}\times0.2
+\right)^2
++
+\left(
+-\frac{10.0}{(2.00)^2}\times0.05
+\right)^2
+}
+$$
+
+Simplifying:
+
+$$
+\Delta R
+=
+\sqrt{
+(0.10)^2
++
+(0.125)^2
+}
+$$
+
+$$
+\Delta R
+=
+\sqrt{
+0.01+0.015625
+}
+$$
+
+$$
+\Delta R
+=
+\sqrt{0.025625}
+$$
+
+$$
+\Delta R
+=
+0.16\Omega
 $$
 
 ---
@@ -117,10 +174,10 @@ $$
 R = (5.00 \pm 0.16)\Omega
 $$
 
-Therefore, the measured resistance is expected to be:
+Therefore, the measured resistance is expected to lie within the interval:
 
 $$
 4.84\Omega \leq R \leq 5.16\Omega
 $$
 
-This example demonstrates how uncertainties from multiple measurements propagate into a calculated quantity and affect the final result.
+This result shows how uncertainties in voltage and current measurements propagate into the calculated resistance.
