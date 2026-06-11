@@ -54,7 +54,23 @@ $$
 
 the uncertainty in resistance is calculated as:
 
-ΔR = √[(1/I × ΔV)² + (V/I² × ΔI)²]
+First part:
+
+$$
+\frac{1}{2.00}\times0.2 = 0.10
+$$
+
+Second part:
+
+$$
+\frac{10.0}{(2.00)^2}\times0.05 = 0.125
+$$
+
+Then combine them:
+
+$$
+\Delta R = \sqrt{(0.10)^2 + (0.125)^2}
+$$
 
 This formula shows how the uncertainties in voltage and current propagate into the resistance.
 
