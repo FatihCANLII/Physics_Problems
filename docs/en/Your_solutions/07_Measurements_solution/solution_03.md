@@ -99,6 +99,7 @@ $$
 Substitute these values step by step.
 
 Now calculate each part separately:
+
 $$
 \frac{1}{2.00}\times0.2 = 0.10
 $$
